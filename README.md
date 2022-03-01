@@ -1,2 +1,2 @@
 # 100daysOfJavascript
-just for practice
+For practice javascript a long this days.
