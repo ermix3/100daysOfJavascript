@@ -11,7 +11,24 @@
 */
 
 const chunkArray= (arr, len) => {
-    // code
+  // 1rst method
+  // let result = [];
+  // let i = 0;
+  // while (i < arr.length) {
+  //   result.push(arr.slice(i, i + len));
+  //   i += len;
+  // }
+  // return result;
+
+  // 2nd method
+  return arr.reduce((acc, curr, i) => {
+    if (i % len === 0) {
+      acc.push([]);
+    }
+    acc[acc.length - 1].push(curr);
+    return acc;
+  }, []);
+
 }
 
 console.log(chunkArray([1, 2, 3, 4, 5, 6, 7], 3)); // [[1, 2, 3],[4, 5, 6],[7]]
