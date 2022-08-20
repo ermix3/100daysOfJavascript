@@ -1,4 +1,5 @@
-# 100__daysOfJavascript
+# JS Challenges `100DaysOfJavascript`
+
 ## For practice javascript a long this days.
 
 ![javascript](js.png)
